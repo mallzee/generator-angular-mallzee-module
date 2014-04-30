@@ -12,7 +12,7 @@
   "dependencies": {
     "angular": "~1.2.0"
   },
-  "devDependancies": {
+  "devDependencies": {
     "angular-mocks": "~1.2.0"
   }
 }

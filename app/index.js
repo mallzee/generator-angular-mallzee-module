@@ -70,6 +70,7 @@ var AngularMallzeeModuleGenerator = yeoman.generators.Base.extend({
       this.mkdir('src/controllers');
       this.mkdir('tests/controllers');
       this.template('_controllers.js', 'src/controllers/controllers.js');
+      this.template('_controllersSpec.js', 'test/controllers/controllersSpec.js');
     }
 
     if (this.hasDirectives) {
@@ -77,6 +78,7 @@ var AngularMallzeeModuleGenerator = yeoman.generators.Base.extend({
       this.mkdir('src/directives');
       this.mkdir('tests/directives');
       this.template('_directives.js', 'src/directives/directives.js');
+      this.template('_directivesSpec.js', 'test/directives/directivesSpec.js');
     }
 
     if (this.hasServices) {
@@ -84,6 +86,7 @@ var AngularMallzeeModuleGenerator = yeoman.generators.Base.extend({
       this.mkdir('src/services');
       this.mkdir('tests/services');
       this.template('_services.js', 'src/services/services.js');
+      this.template('_servicesSpec.js', 'test/services/servicesSpec.js');
     }
 
     if (this.hasViews) {
