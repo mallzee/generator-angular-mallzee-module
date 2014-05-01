@@ -19,13 +19,17 @@
     "karma-osx-reporter": "*",
     "karma-sinon": "~1.0.0",
     "karma-chai": "0.0.2",
-    "karma-sinon-chai": "~0.1.4"
+    "karma-sinon-chai": "~0.1.4",
+    "dgeni": "0.2.2",
+    "dgeni-packages": "0.8.1",
+    "canonical-path": "0.0.2",
+    "lodash": "^2.4.1"
   },
   "scripts": {
     "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
   },
   "repository": "",
   "engines": {
-    "node": "0.10.10"
+    "node": "0.10.18"
   }
 }

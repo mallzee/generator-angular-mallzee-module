@@ -64,6 +64,7 @@ var AngularMallzeeModuleGenerator = yeoman.generators.Base.extend({
   app: function () {
     this.mkdir('src');
     this.mkdir('tests');
+    this.mkdir('docs');
 
     if (this.hasControllers) {
       this.log('Generating controllers in module ' + this.moduleName);
@@ -98,6 +99,7 @@ var AngularMallzeeModuleGenerator = yeoman.generators.Base.extend({
     this.template('_bower.json', 'bower.json');
     this.template('_karma.conf.js', 'karma.conf.js');
     this.copy('Gruntfile.js', 'Gruntfile.js');
+    this.copy('dgeni.conf.js', 'docs/dgeni.conf.js');
   },
 
   projectfiles: function () {

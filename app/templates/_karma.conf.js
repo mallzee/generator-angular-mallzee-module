@@ -18,10 +18,10 @@ module.exports = function(config) {
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'src/*.js',
       'src/**/*.js',
-      'test/*.js',
       'test/**/*.js'
+      //'src/*.js',   # Uncomment if you are going to put sourcecode at the root level
+      //'test/*.js',  # Uncomment if you are going to put sourcecode at the root level
     ],
 
 
